@@ -3,7 +3,7 @@ version: '3.3'
 services:
 
   infcloud:
-    image: waja/infcloud
+    image: infcloud-local:latest
     ports:
       - "80:80"
     restart: always
