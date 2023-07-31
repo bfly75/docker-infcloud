@@ -1,6 +1,0 @@
-version: "3"
-services:
-  web:
-    image: localhost:5000/foobar/${IMAGE_NAME}
-    ports:
-      - "80:80"
