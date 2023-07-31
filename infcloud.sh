@@ -1,7 +1,4 @@
 #!/usr/bin/env ash
-# shellcheck shell=dash
-[ ! -f /srv/infcloud/config/config.js ] && cp /srv/infcloud/config.js.orig /srv/infcloud/config/config.js; \
-/srv/infcloud/cache_update.sh; \
-[ ! -f /etc/lighttpd/lighttpd.conf ] && cp /tmp/lighttpd.conf /etc/lighttpd/lighttpd.conf; \
-    lighttpd -D -f /etc/lighttpd/lighttpd.conf
-
+[ ! -f /srv/infcloud/config/config.js ] && cp /srv/infcloud/config.js.orig /srv/infcloud/config/config.js
+/srv/infcloud/cache_update.sh
+lighttpd -D -f /etc/lighttpd/lighttpd.conf
